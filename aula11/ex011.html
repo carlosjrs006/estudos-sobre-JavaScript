@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+</head>
+<body>
+    <h1>Naturaliade</h1>
+   Qual país voce morar ?<input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" onclick="mostrar()">
+    <div id="res"></div>
+<script>
+    function mostrar() {
+        var pais =window.document.getElementById("txtpais").value
+        var res= window.document.getElementById("res")
+        res.innerHTML=`<p> Voce morar em ${pais}</p> `
+            if(pais == 'Brasil'){
+                res.innerHTML += 'Voce é brasileiro!'
+            }
+            else{
+                res.innerHTML += 'Voce é estrangeiro!'
+            }
+
+    }
+
+
+
+</script>
+    
+</body>
+</html>
